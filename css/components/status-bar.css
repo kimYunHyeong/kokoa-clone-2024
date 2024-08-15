@@ -1,7 +1,12 @@
 .status-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 20px;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  background-color: white;
 }
 
 .status-bar__column {
@@ -25,4 +30,8 @@
 
 .status-bar__column .fa-battery-quarter {
   margin: 0px 5px;
+}
+
+.status-bar__column span {
+  font-weight: 500;
 }

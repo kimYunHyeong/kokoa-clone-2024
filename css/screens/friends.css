@@ -1,0 +1,20 @@
+#freinds-display-link {
+  text-align: center;
+  width: 100%;
+  display: block;
+  background-color: #fafafa;
+  padding: 20px 0px;
+  font-size: 18px;
+}
+
+#freinds-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#freinds-display-link :nth-child(1) {
+  margin-right: 5px;
+}
+
+#freinds-display-link :nth-child(2) {
+  margin-left: 15px;
+}

@@ -1,0 +1,66 @@
+.badge__small__find {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.span--mother {
+  position: relative;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.find-icons__icon i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.recommended-friends {
+  border-top: var(--default-border);
+  border-bottom: var(--default-border);
+  margin: 25px 0px;
+  padding: 25px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 100px 0px;
+  text-align: center;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+  margin-bottom: 25px;
+}
+
+.open-chat__header__title {
+  font-size: 15px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.open-chat__header span {
+  font-size: 15px;
+  opacity: 0.4;
+  font-weight: 600;
+}

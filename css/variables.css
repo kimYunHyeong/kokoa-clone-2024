@@ -1,6 +1,8 @@
 :root {
   --yellow: #fae100;
+  --grey: rgba(0, 0, 0, 0.4);
   --horizontal-space: 25px;
+  --default-border: 1.5px solid rgba(0, 0, 0, 0.2);
 }
 
 .main-screen {

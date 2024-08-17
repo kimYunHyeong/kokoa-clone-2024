@@ -15,9 +15,6 @@
 .badge__small {
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-
   width: 8px;
   height: 8px;
   border-radius: 50%;

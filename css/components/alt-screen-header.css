@@ -1,10 +1,11 @@
 .alt-header {
   padding: var(--horizontal-space);
-  margin-top: 25px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
+  top: 25px;
 }
 
 .alt-header__title {
@@ -12,10 +13,20 @@
   font-weight: 600;
 }
 
+.alt-header-column {
+  width: 33%;
+}
+
 .alt-header-column:first-child {
   margin-right: auto;
 }
 
+.alt-header-column:nth-child(2) {
+  text-align: center;
+}
+
 .alt-header-column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }

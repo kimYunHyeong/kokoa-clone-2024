@@ -19,6 +19,17 @@
   margin-top: 0px;
 }
 
+@keyframes fadeInUP {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-screen__chatRoom {
   margin-top: 120px;
   display: flex;
@@ -33,12 +44,25 @@
   padding: 15px;
   align-content: center;
   text-align: center;
+  animation: fadeInUP 0.5s linear;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .msg-row {
   width: 100%;
   display: flex;
   margin: 20px 0px;
+  animation: fadeInLeft 0.5s linear;
 }
 
 .msg-row__content {
@@ -89,8 +113,20 @@
   margin-right: 5px;
 }
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .sender {
   justify-content: flex-end;
+  animation: fadeInRight 0.5s linear;
 }
 
 .sender .msg-row__msg-info {
@@ -122,6 +158,7 @@
   align-items: center;
   padding: 10px 15px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .round-border {
@@ -147,6 +184,8 @@
   border: 1px solid var(--grey);
   border-radius: 25px;
   align-items: center;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .smile__img {
@@ -181,4 +220,26 @@
 
 .reply-bar__column input:focus {
   outline: none;
+}
+
+.reply-bar .reply-bar__column:first-child,
+.reply-bar .smile__img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply-bar:focus-within .reply-bar__column:first-child,
+.reply-bar:focus-within .smile__img {
+  opacity: 0;
+}
+
+.reply-bar:focus-within .reply-bar__column:last-child {
+  transform: translateX(-3%) translateY(-80px) scaleX(1.05);
+}
+
+.reply-bar:focus-within {
+  transform: translateY(80px);
+}
+
+.reply-bar:focus-within {
+  transform: translateY(80px);
 }

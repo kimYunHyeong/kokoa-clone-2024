@@ -11,7 +11,7 @@
   background-color: var(--yellow);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .no-mobile {
     display: none;
   }
